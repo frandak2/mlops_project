@@ -1,0 +1,9 @@
+stages:
+  build_feature:
+    cmd: python mlops_project/features/build_features.py
+    outs:
+    - data/processed/full_data.csv
+  training:
+    cmd: python mlops_project/models/train_model.py
+    deps:
+    - data/processed/full_data.csv

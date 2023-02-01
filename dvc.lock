@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  build_feature:
+    cmd: python mlops_project/features/build_features.py
+    outs:
+    - path: data/processed/full_data.csv
+      md5: 8905634bcd80b3e51f5b8963dde50c3b
+      size: 167877
+  training:
+    cmd: python mlops_project/models/train_model.py
+    deps:
+    - path: data/processed/full_data.csv
+      md5: 8905634bcd80b3e51f5b8963dde50c3b
+      size: 167877
