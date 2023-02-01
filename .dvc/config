@@ -1,0 +1,4 @@
+['remote "data-track"']
+    url = gs://model-data-tracker-mlops/dataset
+['remote "model-track"']
+    url = gs://model-data-tracker-mlops/model
