@@ -1,4 +1,4 @@
-def get_logging_config(transaction_id):
+def get_logging_config(transaction_id=None):
     """create the log
 
     Args:
@@ -7,13 +7,15 @@ def get_logging_config(transaction_id):
     Returns:
         _type_: _description_
     """
+    if transaction_id is None:
+        transaction_id='000001'
     logging_config = {
         'version': 1,
         'disable_existing_loggers': True,
         'formatters': {
             'standard': {
                 "datefmt": '%Y-%m-%d %H:%M:%S %p',
-                'format': f'%(asctime)s | %(levelname)s | SWORD | %(module)s >> {transaction_id} | %(message)s'
+                'format': f'%(asctime)s | %(levelname)s | MLOPS PROJECT | %(module)s >> {transaction_id} | %(message)s'
             },
         },
         'handlers': {
