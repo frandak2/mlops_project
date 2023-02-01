@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 import mlops_project.utils.paths as path
 
 def update_model(model: Pipeline) -> None:
-    dump(model, path.models_dir('model.pkl'))
+    dump(model, path.models_dir('model1.pkl'))
 
 
 def save_simple_metrics_report(train_score: float, test_score: float, validation_score: float, model: Pipeline) -> None:
