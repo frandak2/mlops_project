@@ -1,7 +1,49 @@
-# mlops_project
+# MLops Project
+This project uses a combination of tools to create a complete MLops cycle.
 
-A short description of the project.
-  
+## Diagrama
+![Structure](references/mlops_diagram.jpg)
+
+## Tools used
+- Notebooks
+- .py files creating modules
+- DVC
+- FastAPI
+- CI/CD
+- CML
+- Git
+- Github Actions
+- Google Storage
+### Notebooks
+Notebooks are a tool for creating and running code interactively. In this project, they are used to experiment with machine learning models.
+
+### .py files creating modules
+.py files are used to create reusable modules that can be imported and used in other scripts.
+
+### DVC
+DVC is a tool for managing and controlling data and models in machine learning projects.
+
+### FastAPI
+FastAPI is a framework for creating APIs with Python. In this project, it is used to create an API that can be used for making predictions with the machine learning models.
+
+### CI/CD
+CI/CD (Continuous Integration / Continuous Deployment) is a practice that allows for automating the building, testing, and deployment of software. In this project, it is used to ensure that code and model changes are constantly and automatically implemented.
+
+### CML
+CML (Continuous Machine Learning) is a practice that allows for automating and improving machine learning model experimentation and training.
+
+### Git
+Git is a version control system that allows for maintaining a record of code and model changes.
+
+### Github Actions
+Github Actions is a CI/CD service offered by Github. In this project, it is used to run automated CI/CD actions.
+
+### Google Storage (you can use whichever as S3, firestore, g-drive, azure store)
+Google Storage is a cloud storage service that allows for storing and retrieving data and models. In this project, it is used to store the data and models used in the machine learning models.
+
+## How to run the project
+Please follow the instructions in the README.md file to run the project in your local environment.
+
 ## Installation guide
 
 Please read [install.md](install.md) for details on how to set up this project.
