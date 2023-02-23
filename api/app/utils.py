@@ -5,10 +5,9 @@ from pydantic import BaseModel
 from pandas import DataFrame
 import os 
 from io import BytesIO
-import mlops_project.utils.paths as path
 
 def get_model() -> Pipeline:
-    model = load(path.models_dir('model1.pkl'))
+    model = load('models/model.pkl')
     return model
 
 def transform_to_dataframe(class_model: BaseModel) -> DataFrame:
